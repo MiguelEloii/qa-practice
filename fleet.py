@@ -3,7 +3,7 @@ def classify_speed(speed):
         raise ValueError("Speed cannot be negative")
     if speed == 0:
         return "stopped"
-    if speed < 120:
+    if speed <= 120:
         return "normal"
     return "speeding"
 
